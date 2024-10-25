@@ -55,7 +55,7 @@ sudo systemctl status docker
 
 The output should look like this:
 
-![Install Docker](/Users/heng/Code/mqtt101/source/images/mqtt-on-docker/0699c3d497f6767aa69cdbe131ada712.png)
+![Install Docker](/images/mqtt-on-docker/0699c3d497f6767aa69cdbe131ada712.png)
 
 If everything is set up correctly, you should see Docker listed as active (running).
 
@@ -79,7 +79,7 @@ docker run -d --name emqx -p 18083:18083 -p 1883:1883 emqx:latest
 
 We can check if the container is running by executing the docker ps command. The output should look like this:
 
-![Run the EMQX Broker Image](/Users/heng/Code/mqtt101/source/images/mqtt-on-docker/ab07ef39d2d8fab37fb1b14571ee81e8.png)
+![Run the EMQX Broker Image](/images/mqtt-on-docker/ab07ef39d2d8fab37fb1b14571ee81e8.png)
 
 Here, the -d flag runs the container in detached mode. Ports 18083 and 1883 are mapped to your host machine, allowing you to interact with the EMQX broker. The EMQX broker runs as the Linux user emqx inside the container.
 
@@ -157,7 +157,7 @@ docker exec -it emqx1 sh -c "emqx_ctl cluster status"
 
 The output should look like this:
 
-![The output](/Users/heng/Code/mqtt101/source/images/mqtt-on-docker/026cb15ffb81ed815fabe719fa9150af.png)
+![The output](/images/mqtt-on-docker/026cb15ffb81ed815fabe719fa9150af.png)
 
 ### Set Up Persistence
 
@@ -181,7 +181,7 @@ services:
 
 The output should look something like:
 
-![docker compose up](/Users/heng/Code/mqtt101/source/images/mqtt-on-docker/31bda0c26dd7fdabb281e8c03f003dfd.png)
+![docker compose up](/images/mqtt-on-docker/31bda0c26dd7fdabb281e8c03f003dfd.png)
 
 To ensure the same state when the container restarts, make sure to specify the `EMQX_NAME` and `EMQX_HOST` variables as previously defined.
 
