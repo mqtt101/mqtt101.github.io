@@ -301,3 +301,7 @@ Received message displayed on terminal
 ## Summary
 
 This blog provides a step-by-step guide on connecting to a serverless MQTT deployment via the MQTTnet library. By following these instructions, you have successfully created a .Net application capable of publishing and subscribing to Serverless MQTT.
+
+
+
+*Originally published at* [www.emqx.com](https://www.emqx.com/en/blog/connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp)
